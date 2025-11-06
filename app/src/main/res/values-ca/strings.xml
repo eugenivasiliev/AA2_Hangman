@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AA2_Hangman</string>
     <string name="level1_word">ENTI</string>
@@ -8,6 +9,6 @@
     <string name="level6_word">ENTI</string>
     <string name="level7_word">ENTI</string>
     <string name="level8_word">ENTI</string>
-    <string name="level_button_text_word">Word:</string>
-    <string name="level_button_text_letters">Letters:</string>
+    <string name="level_button_text_word">"Paraula: "</string>
+    <string name="level_button_text_letters">"Lletres: "</string>
 </resources>
