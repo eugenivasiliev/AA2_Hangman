@@ -12,21 +12,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AA2_Hangman" >
         <activity
+            android:name=".LoseScreen"
+            android:exported="false" />
+        <activity
+            android:name=".WinScreen"
+            android:exported="false" />
+        <activity
             android:name=".LevelSelect"
             android:exported="false" />
         <activity
             android:name=".SplashScreen"
             android:exported="true" >
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    <activity
-    android:name=".Hangman"
-    android:exported="false" />
+        <activity
+            android:name=".Hangman"
+            android:exported="false" />
     </application>
 
 </manifest>
