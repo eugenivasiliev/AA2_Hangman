@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.graphics.toColorInt
 import androidx.core.view.get
+import kotlin.math.min
 
 
 class LevelSelect : AppCompatActivity() {
@@ -64,7 +65,8 @@ class LevelSelect : AppCompatActivity() {
     }
 
     private fun StyleButton(levelButton: LinearLayout, word: String) {
-        levelButton.setBackgroundColor(levelColors[word.length].toColorInt());
+        levelButton.setBackgroundColor(
+            getColor(levelColors[GetDifficulty(word.length).ordinal]));
 
         val layout: LinearLayout = levelButton.getChildAt(0) as LinearLayout;
 
@@ -75,7 +77,19 @@ class LevelSelect : AppCompatActivity() {
             getString((R.string.level_button_text_letters)) + word.length;
 
         (levelButton.getChildAt(1) as ImageView)
-            .setImageResource(levelDrawables[word.length]);
+            .setImageResource(levelDrawables[GetDifficulty(word.length).ordinal]);
+    }
+
+    private enum class Difficulty {
+        EASY,
+        MEDIUM,
+        HARD
+    }
+
+    private fun GetDifficulty(length: Int): Difficulty {
+        if(length <= 4) return Difficulty.EASY;
+        if(length <= 7) return Difficulty.MEDIUM;
+        return Difficulty.HARD;
     }
 
     private fun StartGame(bundle: Bundle) {
