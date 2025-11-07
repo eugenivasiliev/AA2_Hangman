@@ -6,8 +6,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoseScreen"
-    android:gravity="center"
     android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:menu="@menu/topbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
 
     <TextView
         android:layout_width="wrap_content"
@@ -18,5 +31,7 @@
         android:textColor="#FF0000"
         android:textSize="30pt"
         android:rotation="5"/>
+
+    </LinearLayout>
 
   </LinearLayout>

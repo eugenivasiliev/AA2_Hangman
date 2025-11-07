@@ -2,6 +2,13 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.AA2_Hangman" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="backgroundColor">@color/background_night</item>
+        <item name="colorPrimary">@color/toolbar_night</item>
+        <item name="android:keyBackground">@color/key_background_night</item>
+        <item name="android:key">@color/key_letter_night</item>
+    </style>
+
+    <style name="Theme.AA2_Hangman.Night" parent="Base.Theme.AA2_Hangman" >
+
     </style>
 </resources>

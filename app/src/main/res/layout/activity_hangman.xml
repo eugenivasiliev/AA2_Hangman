@@ -7,9 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".Hangman"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="20dp"
-    android:layout_marginVertical="20dp">
+    android:gravity="center">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:menu="@menu/topbar"/>
 
     <ImageView
         android:id="@+id/image"
@@ -26,12 +33,14 @@
         android:textAlignment="center"
         android:textSize="14pt"
         android:textStyle="bold"
+        android:textColor="?attr/android:keyBackground"
         android:letterSpacing=".4"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_margin="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -45,8 +54,8 @@
                 android:text="A"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -59,8 +68,8 @@
                 android:text="B"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -73,8 +82,8 @@
                 android:text="C"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -87,8 +96,8 @@
                 android:text="D"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -101,8 +110,8 @@
                 android:text="E"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -115,8 +124,8 @@
                 android:text="F"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -129,8 +138,8 @@
                 android:text="G"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -143,8 +152,8 @@
                 android:text="H"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -157,8 +166,8 @@
                 android:text="I"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
 
@@ -180,8 +189,8 @@
                 android:text="J"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -194,8 +203,8 @@
                 android:text="K"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -208,8 +217,8 @@
                 android:text="L"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -222,8 +231,8 @@
                 android:text="M"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -236,8 +245,8 @@
                 android:text="N"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -250,8 +259,8 @@
                 android:text="O"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -264,8 +273,8 @@
                 android:text="P"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -278,8 +287,8 @@
                 android:text="Q"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -292,8 +301,8 @@
                 android:text="R"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
 
@@ -315,8 +324,8 @@
                 android:text="S"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -329,8 +338,8 @@
                 android:text="T"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -343,8 +352,8 @@
                 android:text="U"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -357,8 +366,8 @@
                 android:text="V"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -371,8 +380,8 @@
                 android:text="W"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -385,8 +394,8 @@
                 android:text="X"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -399,8 +408,8 @@
                 android:text="Y"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
             <Space
@@ -413,8 +422,8 @@
                 android:text="Z"
                 android:textStyle="bold"
                 android:textSize="14pt"
-                android:textColor="@color/white"
-                android:background="@color/black"
+                android:textColor="?attr/android:key"
+                android:background="?attr/android:keyBackground"
                 android:layout_weight="1"
                 android:textAlignment="center"/>
 
