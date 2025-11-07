@@ -11,4 +11,7 @@
     <string name="level8_word">ENTI</string>
     <string name="level_button_text_word">"Paraula: "</string>
     <string name="level_button_text_letters">"Lletres: "</string>
+    <string name="you_win">Has Guanyat!</string>
+    <string name="you_lose">Has Perdut...</string>
+    <string name="splash_screen_text">Toca per Continuar</string>
 </resources>

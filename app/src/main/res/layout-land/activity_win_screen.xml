@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="cursive"
             android:rotation="-15"
-            android:text="You Win!"
+            android:text="@string/you_win"
             android:textSize="30pt"
             android:textStyle="bold" />
 

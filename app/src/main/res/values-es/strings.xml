@@ -11,4 +11,7 @@
     <string name="level8_word">ENTI</string>
     <string name="level_button_text_word">"Palabra: "</string>
     <string name="level_button_text_letters">"Letras: "</string>
+    <string name="you_win">Has Ganado!</string>
+    <string name="you_lose">Has Perdido...</string>
+    <string name="splash_screen_text">Toca para Continuar</string>
 </resources>
