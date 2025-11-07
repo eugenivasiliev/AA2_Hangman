@@ -6,4 +6,19 @@
     <color name="light_blue_600">#FF039BE5</color>
     <color name="gray_400">#FFBDBDBD</color>
     <color name="gray_600">#FF757575</color>
+
+    <!-- Custom colors -->
+    <!-- General -->
+    <color name="background_light">#FFFFFF</color>
+    <color name="background_night">#000000</color>
+
+    <!-- Toolbar -->
+    <color name="toolbar_light">#9C27B0</color>
+    <color name="toolbar_night">#673AB7</color>
+
+    <!-- Keyboard -->
+    <color name="key_background_light">#000000</color>
+    <color name="key_background_night">#FFFFFF</color>
+    <color name="key_letter_light">#FFFFFF</color>
+    <color name="key_letter_night">#000000</color>
 </resources>
