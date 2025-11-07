@@ -1,6 +1,7 @@
 package com.example.aa2_hangman
 
 import android.content.Intent
+import android.content.res.Resources
 import android.graphics.Color
 import android.os.Bundle
 import android.view.Menu
@@ -11,8 +12,10 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.graphics.toColorInt
 import androidx.core.view.get
+
 
 class LevelSelect : AppCompatActivity() {
 
@@ -29,6 +32,7 @@ class LevelSelect : AppCompatActivity() {
 
         toolbar = findViewById<Toolbar>(R.id.toolbar);
         setSupportActionBar(toolbar);
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -38,14 +42,26 @@ class LevelSelect : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return if (item.itemId == R.id.light_mode) {
-            setTheme(R.style.Theme_AA2_Hangman);
+            this.setTheme(R.style.Theme_AA2_Hangman);
+            println("light");
             true;
         } else if (item.itemId == R.id.dark_mode) {
-            setTheme(R.style.Theme_AA2_Hangman_Night);
+            this.setTheme(R.style.Theme_AA2_Hangman_Night);
+            println("night");
             true;
         } else {
             super.onOptionsItemSelected(item);
         }
+    }
+
+    override fun onNightModeChanged(mode: Int) {
+        super.onNightModeChanged(mode);
+        println("change");
+    }
+
+    override fun onApplyThemeResource(theme: Resources.Theme?, resid: Int, first: Boolean) {
+        super.onApplyThemeResource(theme, resid, first)
+        println("theme");
     }
 
     private fun SetupLevelButton(id: Int, word: String) {
