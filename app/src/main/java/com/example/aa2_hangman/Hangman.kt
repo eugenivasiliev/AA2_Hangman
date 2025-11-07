@@ -3,11 +3,16 @@ package com.example.aa2_hangman
 import android.content.Intent
 import android.media.Image
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 
 class Hangman : AppCompatActivity() {
+
+    lateinit var toolbar: Toolbar;
 
     lateinit var word_to_guess: String;
     lateinit var guessedLetters: MutableSet<Char>;
@@ -43,6 +48,28 @@ class Hangman : AppCompatActivity() {
         UpdateWord();
         SetupKeyboard();
 
+        toolbar = findViewById<Toolbar>(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.topbar, menu);
+        return true;
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return if (item.itemId == R.id.light_mode) {
+            this.setTheme(R.style.Theme_AA2_Hangman);
+            println("light");
+            true;
+        } else if (item.itemId == R.id.dark_mode) {
+            this.setTheme(R.style.Theme_AA2_Hangman_Night);
+            println("night");
+            true;
+        } else {
+            super.onOptionsItemSelected(item);
+        }
     }
 
     private fun GetGameWord(): String {

@@ -54,16 +54,6 @@ class LevelSelect : AppCompatActivity() {
         }
     }
 
-    override fun onNightModeChanged(mode: Int) {
-        super.onNightModeChanged(mode);
-        println("change");
-    }
-
-    override fun onApplyThemeResource(theme: Resources.Theme?, resid: Int, first: Boolean) {
-        super.onApplyThemeResource(theme, resid, first)
-        println("theme");
-    }
-
     private fun SetupLevelButton(id: Int, word: String) {
         val levelButton: LinearLayout = findViewById<LinearLayout>(id);
         StyleButton(levelButton, word);

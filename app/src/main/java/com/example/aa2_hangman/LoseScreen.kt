@@ -2,7 +2,10 @@ package com.example.aa2_hangman
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
+import androidx.appcompat.widget.Toolbar
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat
 class LoseScreen : AppCompatActivity() {
 
     lateinit var Screen: View;
+    lateinit var toolbar: Toolbar;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +22,28 @@ class LoseScreen : AppCompatActivity() {
         Screen = findViewById<View>(R.id.main);
         Screen.setOnClickListener { Restart(); }
 
+        toolbar = findViewById<Toolbar>(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.topbar, menu);
+        return true;
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return if (item.itemId == R.id.light_mode) {
+            this.setTheme(R.style.Theme_AA2_Hangman);
+            println("light");
+            true;
+        } else if (item.itemId == R.id.dark_mode) {
+            this.setTheme(R.style.Theme_AA2_Hangman_Night);
+            println("night");
+            true;
+        } else {
+            super.onOptionsItemSelected(item);
+        }
     }
 
     private fun Restart() {
