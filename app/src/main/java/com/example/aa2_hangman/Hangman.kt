@@ -22,8 +22,15 @@ class Hangman : AppCompatActivity() {
     var imageIndex: Int = 0;
 
     val images: List<Int> = listOf<Int>(
-        R.drawable.ic_launcher_foreground,
-        R.drawable.ic_launcher_background
+        R.drawable.hangman_0,
+        R.drawable.hangman_1,
+        R.drawable.hangman_2,
+        R.drawable.hangman_3,
+        R.drawable.hangman_4,
+        R.drawable.hangman_5,
+        R.drawable.hangman_6,
+        R.drawable.hangman_7,
+        R.drawable.hangman_8
     );
 
     val keyIds: List<Int> = listOf<Int>(
@@ -46,6 +53,7 @@ class Hangman : AppCompatActivity() {
         image = findViewById<ImageView>(R.id.image);
 
         UpdateWord();
+        image.setImageResource(images[imageIndex]);
         SetupKeyboard();
 
         toolbar = findViewById<Toolbar>(R.id.toolbar);

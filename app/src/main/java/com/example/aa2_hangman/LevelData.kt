@@ -23,17 +23,16 @@ val levelWords: List<Int> = listOf(
 );
 
 val levelDrawables: List<Int> = listOf(
-    R.drawable.ic_launcher_background,
-    R.drawable.ic_launcher_foreground,
-    R.drawable.ic_launcher_foreground,
-    R.drawable.ic_launcher_foreground,
-    R.drawable.ic_launcher_foreground
+    R.drawable.difficulty_easy,
+    R.drawable.difficulty_medium,
+    R.drawable.difficulty_hard
 );
 
-val levelColors: List<String> = listOf(
-    "#FF0000",
-    "#FF0000",
-    "#FF0000",
-    "#FF0000",
-    "#FF0000",
+val levelColors: List<Int> = listOf(
+    //1-4 letters
+    R.color.difficulty_easy,
+    //5-7 letters
+    R.color.difficulty_medium,
+    //7+ letters
+    R.color.difficulty_hard
 );
