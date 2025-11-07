@@ -1,36 +1,49 @@
 package com.example.aa2_hangman
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import android.view.WindowId
+import android.widget.ImageView
 import android.widget.LinearLayout
-import androidx.activity.enableEdgeToEdge
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.core.graphics.toColorInt
+import androidx.core.view.get
 
 class LevelSelect : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_level_select)
-        SetupLevelButton(R.id.level1_button, getString(R.string.level1));
-        SetupLevelButton(R.id.level2_button, getString(R.string.level2));
-        SetupLevelButton(R.id.level3_button, getString(R.string.level3));
-        SetupLevelButton(R.id.level4_button, getString(R.string.level4));
-        SetupLevelButton(R.id.level5_button, getString(R.string.level5));
-        SetupLevelButton(R.id.level6_button, getString(R.string.level6));
-        SetupLevelButton(R.id.level7_button, getString(R.string.level7));
-        SetupLevelButton(R.id.level8_button, getString(R.string.level8));
+        for(i in levelIds.indices)
+            SetupLevelButton(
+                levelIds[i],
+                getString(levelWords[i])
+            );
     }
 
     private fun SetupLevelButton(id: Int, word: String) {
-        val levelButton: LinearLayout = findViewById(id);
-        println(id);
+        val levelButton: LinearLayout = findViewById<LinearLayout>(id);
+        StyleButton(levelButton, word);
+
         val bundle: Bundle = Bundle();
         bundle.putString("word", word);
         levelButton.setOnClickListener { StartGame(bundle) }
+    }
+
+    private fun StyleButton(levelButton: LinearLayout, word: String) {
+        levelButton.setBackgroundColor(levelColors[word.length].toColorInt());
+
+        val layout: LinearLayout = levelButton.getChildAt(0) as LinearLayout;
+
+        (layout.getChildAt(0) as TextView).text =
+            getString(R.string.level_button_text_word) + word;
+
+        (layout.getChildAt(1) as TextView).text =
+            getString((R.string.level_button_text_letters)) + word.length;
+
+        (levelButton.getChildAt(1) as ImageView)
+            .setImageResource(levelDrawables[word.length]);
     }
 
     private fun StartGame(bundle: Bundle) {
