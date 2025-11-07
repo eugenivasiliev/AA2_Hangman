@@ -23,11 +23,9 @@ val levelWords: List<Int> = listOf(
 );
 
 val levelDrawables: List<Int> = listOf(
-    R.drawable.ic_launcher_background,
-    R.drawable.ic_launcher_foreground,
-    R.drawable.ic_launcher_foreground,
-    R.drawable.ic_launcher_foreground,
-    R.drawable.ic_launcher_foreground
+    R.drawable.difficulty_easy,
+    R.drawable.difficulty_medium,
+    R.drawable.difficulty_hard
 );
 
 val levelColors: List<Int> = listOf(

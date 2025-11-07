@@ -8,11 +8,11 @@
     tools:context=".SplashScreen"
     android:orientation="vertical">
 
-    <View
-        android:id="@+id/view3"
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.1" />
+        android:src="@drawable/hangman_8"
+        android:layout_weight="30"/>
 
     <TextView
         android:id="@+id/textView3"
@@ -21,12 +21,7 @@
         android:textAlignment="center"
         android:text="@string/splash_screen_text"
         android:textStyle="bold"
-        android:textSize="15pt"/>
-
-    <View
-        android:id="@+id/view4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.9"/>
+        android:textSize="15pt"
+        android:layout_weight="1"/>
 
 </LinearLayout>
