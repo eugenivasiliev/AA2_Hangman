@@ -2,4 +2,32 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="light_blue_400">#FF29B6F6</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="gray_400">#FFBDBDBD</color>
+    <color name="gray_600">#FF757575</color>
+
+    <!-- Custom colors -->
+    <!-- General -->
+    <color name="background_light">#FFFFFF</color>
+    <color name="background_night">#000000</color>
+
+    <!-- Toolbar -->
+    <color name="toolbar_light">#9C27B0</color>
+    <color name="toolbar_night">#673AB7</color>
+
+    <!-- Keyboard -->
+    <color name="key_background_light">#000000</color>
+    <color name="key_background_night">#FFFFFF</color>
+    <color name="key_letter_light">#FFFFFF</color>
+    <color name="key_letter_night">#000000</color>
+
+    <!-- Level Select -->
+    <color name="difficulty_easy">#4CAF50</color>
+    <color name="difficulty_medium">#FF9800</color>
+    <color name="difficulty_hard">#F44336</color>
+
+    <!-- Loss -->
+    <color name="error_light">#9D0000</color>
+    <color name="error_night">#FF1E1E</color>
 </resources>

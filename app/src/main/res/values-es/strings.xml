@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AA2_Hangman</string>
+    <string name="level1_word">ENTI</string>
+    <string name="level2_word">JUEGA</string>
+    <string name="level3_word">SILKSONG</string>
+    <string name="level4_word">PONME</string>
+    <string name="level5_word">UNA</string>
+    <string name="level6_word">BUENA</string>
+    <string name="level7_word">NOTA</string>
+    <string name="level8_word">PORFAVOR</string>
+    <string name="level_button_text_word">"Palabra: "</string>
+    <string name="level_button_text_letters">"Letras: "</string>
+    <string name="you_win">Has Ganado!</string>
+    <string name="you_lose">Has Perdido...</string>
+    <string name="splash_screen_text">Toca para Continuar</string>
+    <string name="light_mode">Modo Claro</string>
+    <string name="dark_mode">Modo Oscuro</string>
+</resources>
