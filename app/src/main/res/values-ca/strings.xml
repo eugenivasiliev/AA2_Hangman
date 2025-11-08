@@ -2,16 +2,18 @@
 <resources>
     <string name="app_name">AA2_Hangman</string>
     <string name="level1_word">ENTI</string>
-    <string name="level2_word">ENTI</string>
-    <string name="level3_word">ENTI</string>
-    <string name="level4_word">ENTI</string>
-    <string name="level5_word">ENTI</string>
-    <string name="level6_word">ENTI</string>
-    <string name="level7_word">ENTI</string>
-    <string name="level8_word">ENTI</string>
+    <string name="level2_word">JUGA</string>
+    <string name="level3_word">SILKSONG</string>
+    <string name="level4_word">POSAM</string>
+    <string name="level5_word">UNA</string>
+    <string name="level6_word">BONA</string>
+    <string name="level7_word">NOTA</string>
+    <string name="level8_word">SIUSPLAU</string>
     <string name="level_button_text_word">"Paraula: "</string>
     <string name="level_button_text_letters">"Lletres: "</string>
     <string name="you_win">Has Guanyat!</string>
     <string name="you_lose">Has Perdut...</string>
     <string name="splash_screen_text">Toca per Continuar</string>
+    <string name="light_mode">Mode Clar</string>
+    <string name="dark_mode">Mode Fosc</string>
 </resources>
