@@ -26,4 +26,8 @@
     <color name="difficulty_easy">#4CAF50</color>
     <color name="difficulty_medium">#FF9800</color>
     <color name="difficulty_hard">#F44336</color>
+
+    <!-- Loss -->
+    <color name="error_light">#9D0000</color>
+    <color name="error_night">#FF1E1E</color>
 </resources>

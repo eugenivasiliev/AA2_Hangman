@@ -16,12 +16,13 @@
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:menu="@menu/topbar"/>
+        app:menu="@menu/topbar" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="20dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="80dp"
@@ -34,7 +35,6 @@
                 android:layout_height="0dp"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
-                android:background="#FF9800"
                 android:orientation="horizontal"
                 android:padding="10dp">
 
@@ -48,19 +48,21 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Level 1" />
+
+                        android:textColor="?attr/android:key" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Letters: 3" />
+                        android:textColor="?attr/android:key" />
                 </LinearLayout>
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/ic_launcher_background" />
+                     />
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/level2_button"
                 android:layout_width="wrap_content"
@@ -69,7 +71,7 @@
                 android:orientation="horizontal"
                 android:layout_margin="20dp"
                 android:padding="10dp"
-                android:background="#FF9800">
+                >
 
                 <LinearLayout
                     android:layout_width="200dp"
@@ -81,19 +83,21 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Level 1" />
+
+                        android:textColor="?attr/android:key" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Letters: 3" />
+                        android:textColor="?attr/android:key" />
                 </LinearLayout>
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/ic_launcher_background" />
+                     />
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/level3_button"
                 android:layout_width="wrap_content"
@@ -102,7 +106,7 @@
                 android:orientation="horizontal"
                 android:layout_margin="20dp"
                 android:padding="10dp"
-                android:background="#FF9800">
+                >
 
                 <LinearLayout
                     android:layout_width="200dp"
@@ -114,19 +118,20 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Level 1" />
+                        android:textColor="?attr/android:key" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Letters: 3" />
+                        android:textColor="?attr/android:key" />
                 </LinearLayout>
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/ic_launcher_background" />
+                     />
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/level4_button"
                 android:layout_width="wrap_content"
@@ -135,7 +140,7 @@
                 android:orientation="horizontal"
                 android:layout_margin="20dp"
                 android:padding="10dp"
-                android:background="#FF9800">
+                >
 
                 <LinearLayout
                     android:layout_width="200dp"
@@ -147,19 +152,20 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Level 1" />
+                        android:textColor="?attr/android:key" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Letters: 3" />
+                        android:textColor="?attr/android:key" />
                 </LinearLayout>
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/ic_launcher_background" />
+                     />
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/level5_button"
                 android:layout_width="wrap_content"
@@ -168,7 +174,7 @@
                 android:orientation="horizontal"
                 android:layout_margin="20dp"
                 android:padding="10dp"
-                android:background="#FF9800">
+                >
 
                 <LinearLayout
                     android:layout_width="200dp"
@@ -180,19 +186,20 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Level 1" />
+                        android:textColor="?attr/android:key" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Letters: 3" />
+                        android:textColor="?attr/android:key" />
                 </LinearLayout>
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/ic_launcher_background" />
+                     />
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/level6_button"
                 android:layout_width="wrap_content"
@@ -201,7 +208,7 @@
                 android:orientation="horizontal"
                 android:layout_margin="20dp"
                 android:padding="10dp"
-                android:background="#FF9800">
+                >
 
                 <LinearLayout
                     android:layout_width="200dp"
@@ -213,19 +220,20 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Level 1" />
+                        android:textColor="?attr/android:key" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Letters: 3" />
+                        android:textColor="?attr/android:key" />
                 </LinearLayout>
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/ic_launcher_background" />
+                     />
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/level7_button"
                 android:layout_width="wrap_content"
@@ -234,7 +242,7 @@
                 android:orientation="horizontal"
                 android:layout_margin="20dp"
                 android:padding="10dp"
-                android:background="#FF9800">
+                >
 
                 <LinearLayout
                     android:layout_width="200dp"
@@ -246,19 +254,20 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Level 1" />
+                        android:textColor="?attr/android:key" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Letters: 3" />
+                        android:textColor="?attr/android:key" />
                 </LinearLayout>
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/ic_launcher_background" />
+                     />
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/level8_button"
                 android:layout_width="wrap_content"
@@ -267,7 +276,7 @@
                 android:orientation="horizontal"
                 android:layout_margin="20dp"
                 android:padding="10dp"
-                android:background="#FF9800">
+                >
 
                 <LinearLayout
                     android:layout_width="200dp"
@@ -279,18 +288,18 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Level 1" />
+                        android:textColor="?attr/android:key" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Letters: 3" />
+                        android:textColor="?attr/android:key" />
                 </LinearLayout>
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:srcCompat="@drawable/ic_launcher_background" />
+                     />
             </LinearLayout>
 
         </LinearLayout>

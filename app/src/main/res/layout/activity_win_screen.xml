@@ -31,7 +31,8 @@
             android:rotation="-15"
             android:text="@string/you_win"
             android:textSize="30pt"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="?attr/android:keyBackground"/>
 
     </LinearLayout>
 </LinearLayout>

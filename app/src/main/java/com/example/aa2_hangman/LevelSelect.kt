@@ -43,12 +43,10 @@ class LevelSelect : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return if (item.itemId == R.id.light_mode) {
-            this.setTheme(R.style.Theme_AA2_Hangman);
-            println("light");
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
             true;
         } else if (item.itemId == R.id.dark_mode) {
-            this.setTheme(R.style.Theme_AA2_Hangman_Night);
-            println("night");
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
             true;
         } else {
             super.onOptionsItemSelected(item);
