@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/toolbar_night</item>
         <item name="android:keyBackground">@color/key_background_night</item>
         <item name="android:key">@color/key_letter_night</item>
+        <item name="colorError">@color/error_night</item>
     </style>
 
     <style name="Theme.AA2_Hangman.Night" parent="Base.Theme.AA2_Hangman" >

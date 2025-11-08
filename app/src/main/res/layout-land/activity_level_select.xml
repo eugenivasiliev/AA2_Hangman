@@ -16,12 +16,13 @@
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:menu="@menu/topbar"/>
+        app:menu="@menu/topbar" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="20dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="80dp"
@@ -61,6 +62,7 @@
                     android:layout_height="match_parent"
                     app:srcCompat="@drawable/ic_launcher_background" />
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/level2_button"
                 android:layout_width="wrap_content"
@@ -94,6 +96,7 @@
                     android:layout_height="match_parent"
                     app:srcCompat="@drawable/ic_launcher_background" />
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/level3_button"
                 android:layout_width="wrap_content"
@@ -127,6 +130,7 @@
                     android:layout_height="match_parent"
                     app:srcCompat="@drawable/ic_launcher_background" />
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/level4_button"
                 android:layout_width="wrap_content"
@@ -160,6 +164,7 @@
                     android:layout_height="match_parent"
                     app:srcCompat="@drawable/ic_launcher_background" />
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/level5_button"
                 android:layout_width="wrap_content"
@@ -193,6 +198,7 @@
                     android:layout_height="match_parent"
                     app:srcCompat="@drawable/ic_launcher_background" />
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/level6_button"
                 android:layout_width="wrap_content"
@@ -226,6 +232,7 @@
                     android:layout_height="match_parent"
                     app:srcCompat="@drawable/ic_launcher_background" />
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/level7_button"
                 android:layout_width="wrap_content"
@@ -259,6 +266,7 @@
                     android:layout_height="match_parent"
                     app:srcCompat="@drawable/ic_launcher_background" />
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/level8_button"
                 android:layout_width="wrap_content"
